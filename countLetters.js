@@ -12,8 +12,6 @@ const countLetters = (str) => {
   const string = str.replace(/ /g, '').toLowerCase()
   const results = {}
 
-  console.log(string)
-
   for (let letter of string) {
     if (results[letter]) {
       results[letter] += 1
