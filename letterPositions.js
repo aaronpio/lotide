@@ -5,9 +5,9 @@ const letterPositions = (sentence) => {
 
   for (let i = 0; i < string.length; i++) {
     if (results[string[i]]) {
-      results[string[i]] += `, ${i}`
+      results[string[i]].push(i)
     } else {
-      results[string[i]] = `${i}`
+      results[string[i]] = [i]
     }
   }
 
