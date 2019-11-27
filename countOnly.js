@@ -25,10 +25,6 @@ const countOnly = (allItems, itemsToCount) => {
   return results
 }
 
-const without = (source, itemsToRemove) => {
-  return source.filter((e) => !itemsToRemove.includes(e))
-}
-
 const firstNames = [
   "Karl",
   "Salima",
