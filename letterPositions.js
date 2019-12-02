@@ -13,6 +13,4 @@ const letterPositions = sentence => {
   return results;
 };
 
-console.log(letterPositions("Aaron Lang"));
-
 module.exports = letterPositions;

@@ -8,8 +8,6 @@ const map = function(array, callback) {
   return results;
 };
 
-console.log(map(words, e => e[0]));
-
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
     return false;
@@ -21,22 +19,6 @@ const eqArrays = (arr1, arr2) => {
     }
   }
   return true;
-};
-
-const assertArraysEqual = (arr1, arr2) => {
-  let result;
-
-  if (!eqArrays(arr1, arr2)) {
-    result = false;
-  }
-
-  if (result === false) {
-    console.log(`🛑 Assertion Failed: ${result}`);
-    return;
-  }
-  result = true;
-  console.log(`✅ Assertion Passed: ${result}`);
-  return;
 };
 
 module.exports = map;
