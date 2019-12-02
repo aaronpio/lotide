@@ -15,7 +15,7 @@ const eqArrays = (arr1, arr2) => {
     return false;
   }
 
-  for (i = 0; i < arr1.length; i++) {
+  for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
       return false;
     }
@@ -37,19 +37,6 @@ const assertArraysEqual = (arr1, arr2) => {
   result = true;
   console.log(`✅ Assertion Passed: ${result}`);
   return;
-};
-
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-
-  for (i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
 };
 
 module.exports = map;
